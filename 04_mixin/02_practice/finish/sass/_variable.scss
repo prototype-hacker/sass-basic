@@ -1,0 +1,49 @@
+//variable
+$btn-pad: 7px 15px;
+$pad-basic: 10px;
+$pad-m: 15px;
+$font-base: 13px;
+$font-s: 12px;
+
+$box-width: 300px;
+
+$grey: #999;
+$black: #000;
+$white: #fff;
+
+
+//mixin
+@mixin css3($key, $value){
+   -webkit-#{$key}: $value;
+   -moz-border-radius: $value;
+   border-radius: $value;
+}
+@mixin bg-color($color){
+	background-color: rgba($color, 0.8);
+}
+
+//extend
+%btn-basic{
+	@include css3(border-radius,4px);
+	padding: $btn-pad;
+	border: 1px solid;
+	text-transform: uppercase;
+	font-size: $font-s;
+	background-color: transparent;
+}
+%basic-box{
+	display: inline-block;
+	margin: $pad-basic;
+	border: 1px solid $grey;
+	@include css3(box-sizing, border-box);
+	img{
+		width: 100%;
+	}
+}
+%before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
