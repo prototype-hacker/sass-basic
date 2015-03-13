@@ -15,8 +15,8 @@ $white: #fff;
 //mixin
 @mixin css3($key, $value){
    -webkit-#{$key}: $value;
-   -moz-border-radius: $value;
-   border-radius: $value;
+   -moz-#{$key}: $value;
+   #{$key}: $value;
 }
 @mixin bg-color($color){
 	background-color: rgba($color, 0.8);

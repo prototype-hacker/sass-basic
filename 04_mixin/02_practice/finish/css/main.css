@@ -50,7 +50,7 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -68,10 +68,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .pic-text-top, .pic-text-left {
   display: inline-block;
   margin: 10px;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   -webkit-box-sizing: border-box;
-  -moz-border-radius: border-box;
-  border-radius: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .pic-text-top img, .pic-text-left img {
   width: 100%;
@@ -101,7 +101,7 @@ p {
 }
 
 .description {
-  color: #999999;
+  color: #999;
 }
 
 .img + .content {
@@ -126,7 +126,7 @@ p {
   margin: 10px auto;
   width: 20px;
   height: 2px;
-  background-color: #999999;
+  background-color: #999;
 }
 
 .before-wrapper {
