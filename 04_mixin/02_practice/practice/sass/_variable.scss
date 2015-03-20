@@ -1,0 +1,24 @@
+//variable
+$btn-pad: 7px 15px;
+$pad-basic: 10px;
+$pad-m: 15px;
+$font-base: 13px;
+$font-s: 12px;
+
+$box-width: 300px;
+
+$grey: #999;
+$black: #000;
+$white: #fff;
+
+
+//extend
+%basic-box{
+	display: inline-block;
+	margin: $pad-basic;
+	border: 1px solid $grey;
+	// @include css3(box-sizing, border-box);
+	img{
+		width: 100%;
+	}
+}

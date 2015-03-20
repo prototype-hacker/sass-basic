@@ -1,0 +1,18 @@
+.header a, nav a, .block a, .footer a {
+  display: block;
+  color: red;
+  font-size: 20px;
+}
+
+.header a {
+  width: 100px;
+  padding: 10px;
+}
+
+.header a {
+  padding: 10px;
+}
+
+nav a {
+  border: 1px solid #000;
+}

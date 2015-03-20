@@ -1,0 +1,66 @@
+// @mixin btn($radius: 3px,$color:red){
+// 	-webkit-border-radius: $radius;
+// 	-moz-border-radius: $radius;
+// 	border-radius: $radius;
+// 	color: $color;
+// 	padding: 5px;
+// }
+
+// .header a{
+// 	@include btn();
+// }
+// .nav a{
+// 	@include btn(5px, yellow);
+// }
+// .footer{
+// 	@include btn($color:blue);
+// }
+
+
+
+// @mixin css3($effect, $value){
+// 	-webkit-#{$effect}: $value;
+//   	-moz-#{$effect}: $value;
+//   	#{$effect}: $value;
+// }
+// .a{
+// 	@include css3("border-radius", 3px);
+// }
+// .b{
+// 	@include css3("box-shadow", 3px 3px 0 #000);
+// }
+
+
+
+// @mixin a($color: blue, $pad: 3px, $bg){}
+// @mixin b($color, $pad, $bg){}
+
+// .box1{
+// 	@include a()
+// }
+// .box2{
+// 	@include b()
+// }
+
+
+//RWD
+$mobile: 768px;
+$pad: 1024px;
+@mixin rwd($device){
+	@media screen and (max-width: $device){
+		@content;
+	}
+}
+
+.box{
+	width: 100px;
+	@include rwd($mobile){
+		width: 30px;
+	}
+	@include rwd($pad){
+		width: 80px;
+	}
+}
+
+
+

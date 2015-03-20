@@ -1,0 +1,41 @@
+%link{
+	display: block;
+	color: red;
+	font-size: 20px;
+}
+%padding{
+	width: 100px;
+	padding: 10px;
+}
+// .box .link{
+// 	width: 100px;
+// 	height: 200px;
+// 	background-color: red;
+// }
+
+// .wrapper .link{
+// 	margin: 0 auto;
+// 	border-radius: 3px;
+// }
+
+.header a{
+	@extend %link,%padding;
+	// @extend %padding;
+	padding: 10px;
+}
+nav a{
+	@extend %link;
+	border: 1px solid #000;
+}
+
+.block a{
+	@extend %link;
+}
+
+
+
+
+
+.footer a{
+	@extend %link;
+}
